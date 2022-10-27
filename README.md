@@ -1,6 +1,6 @@
 ## Expo Signal Clone
 
-Signal clone built using Expo; has the ability to authenticate the user using Firebase, and message other users who are signed up to the app. 
+Signal clone built using Expo; has the ability to authenticate users using Firebase, and message other users who are signed up to the app. 
 
 To get started:
 
