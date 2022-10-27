@@ -39,40 +39,42 @@ export default function RegisterScreen({ navigation }) {
       <Text h3 className="mb-12">
         Create a Signal Account
       </Text>
-      <View className="w-72">
-        <Input
-          placeholder="Full Name"
-          autoFocus
-          type="text"
-          value={name}
-          onChangeText={(text) => setName(text)}
-        />
-        <Input
-          placeholder="Email"
-          autoFocus
-          type="email"
-          value={email}
-          onChangeText={(text) => setEmail(text)}
-          autoCapitalize="none"
-        />
-        <Input
-          placeholder="Password"
-          secureTextEntry
-          type="pasword"
-          value={password}
-          onChangeText={(text) => setPassword(text)}
-          autoCapitalize="none"
-        />
-        <Input
-          placeholder="Profile Picture URL (optional)"
-          autoFocus
-          type="text"
-          value={imageUrl}
-          onChangeText={(text) => setImageUrl(text)}
-          onSubmitEditing={register}
-          autoCapitalize="none"
-        />
-      </View>
+      <Input
+        placeholder="Full Name"
+        autoFocus
+        type="text"
+        className="mt-8 w-56"
+        value={name}
+        onChangeText={(text) => setName(text)}
+      />
+      <Input
+        placeholder="Email"
+        autoFocus
+        type="email"
+        className="mt-8 w-56"
+        value={email}
+        onChangeText={(text) => setEmail(text)}
+        autoCapitalize="none"
+      />
+      <Input
+        placeholder="Password"
+        secureTextEntry
+        type="pasword"
+        className="mt-8 w-56"
+        value={password}
+        onChangeText={(text) => setPassword(text)}
+        autoCapitalize="none"
+      />
+      <Input
+        placeholder="Profile Picture URL (optional)"
+        autoFocus
+        type="text"
+        className="mt-8 w-56"
+        value={imageUrl}
+        onChangeText={(text) => setImageUrl(text)}
+        onSubmitEditing={register}
+        autoCapitalize="none"
+      />
       <Button className="w-48" title="Register" raised onPress={register} />
       <View className="h-24" />
     </KeyboardAvoidingView>

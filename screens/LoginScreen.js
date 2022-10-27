@@ -37,25 +37,25 @@ export default function LoginScreen({ navigation }) {
         }}
         className="w-48 h-48"
       />
-      <View className="w-72">
-        <Input
-          placeholder="Email"
-          autoFocus
-          type="email"
-          value={email}
-          onChangeText={(text) => setEmail(text)}
-          autoCapitalize="none"
-        />
-        <Input
-          placeholder="Password"
-          secureTextEntry
-          type="pasword"
-          value={password}
-          onChangeText={(text) => setPassword(text)}
-          onSubmitEditing={signIn}
-          autoCapitalize="none"
-        />
-      </View>
+      <Input
+        placeholder="Email"
+        autoFocus
+        type="email"
+        className="mt-8 w-56"
+        value={email}
+        onChangeText={(text) => setEmail(text)}
+        autoCapitalize="none"
+      />
+      <Input
+        placeholder="Password"
+        secureTextEntry
+        type="pasword"
+        className="mt-8 w-56"
+        value={password}
+        onChangeText={(text) => setPassword(text)}
+        onSubmitEditing={signIn}
+        autoCapitalize="none"
+      />
       <Button className="w-48 mt-2.5 font-lg" onPress={signIn} title="Login" />
       <Button
         className="w-48 mt-2.5"
